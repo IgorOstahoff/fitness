@@ -15,12 +15,74 @@ body {
 *::after {
   box-sizing: border-box;
 }
+
 .intro {
+  position: relative;
   .img-holder {
     overflow: hidden;
     img {
       display: block;
       width: 100%;
+    }
+  }
+}
+.img-logo {
+  padding-left: 50px;
+}
+.nav {
+  ul {
+    padding-right: 70px;
+    display: flex;
+    justify-content: space-between;
+    li {
+      padding-left: 60px;
+    }
+  }
+  a {
+    &:hover {
+      color: #a2ca28;
+    }
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+.header {
+  position: absolute;
+  height: 115px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slogan {
+  position: absolute;
+  text-transform: uppercase;
+  width: 350px;
+  bottom: 130px;
+  left: 115px;
+  h1 {
+    font-size: 40px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+  }
+  span {
+    color: #a2ca28;
+  }
+  .slogan-can {
+    font-size: 15px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    line-height: 25px;
+    padding-left: 220px;
+
+    span {
+      color: #fd634e;
     }
   }
 }
