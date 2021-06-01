@@ -1,8 +1,35 @@
 body {
-  @include media(">=320px") {
+  margin: 0;
+  background: yellow;
+  @include media(">=768px") {
     background: #9f0;
   }
-  @include media(">=768px") {
-    background: tan;
+  @include media(">=992px") {
+    background: teal;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.intro {
+  .img-holder {
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+.contentGreen {
+  @include box($atlantis);
+}
+.data {
+  background: #fff;
+  @include media(">=1180px") {
+    width: 1180px;
+    margin: auto;
   }
 }
