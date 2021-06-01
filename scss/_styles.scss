@@ -8,7 +8,8 @@ body {
     background: teal;
   }
 }
-
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Open Sans', sans-serif;
 *,
 *::before,
 *::after {
@@ -25,11 +26,129 @@ body {
 }
 .contentGreen {
   @include box($atlantis);
+  .data:nth-child(even) {
+    .dataContent {
+      order: 1;
+    }
+    .dataImg {
+      order: 2;
+    }
+  }
+  @include media(">=768px") {
+    .data:nth-child(even) {
+      .dataContent {
+        order: 2;
+      }
+      .dataImg {
+        order: 1;
+      }
+    }
+  }
 }
+
 .data {
+  display: flex;
   background: #fff;
+  font-family: "Open Sans", sans-serif;
+  flex-wrap: wrap;
+  @include media(">=768px") {
+    flex-wrap: nowrap;
+  }
   @include media(">=1180px") {
     width: 1180px;
     margin: auto;
   }
+}
+.dataContent {
+  width: 400px;
+  padding: 35px;
+  text-align: center;
+  @include media(">=768px") {
+    padding: 50px 35px;
+  }
+}
+.dataContent {
+  span {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #fd634e;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    color: #a2ca28;
+    text-transform: uppercase;
+    padding-top: 13px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      background: url(../images/Shape-gray.png) no-repeat;
+      width: 15px;
+      height: 25px;
+      top: 71px;
+      right: 160px;
+    }
+  }
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #656e74;
+    padding-top: 70px;
+  }
+  a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #a2ca28;
+    line-height: 26px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.dataImg {
+  height: 394px;
+  overflow: hidden;
+  position: relative;
+  @include media(">=768px") {
+    flex: 1;
+  }
+  img {
+    width: auto;
+    display: block;
+  }
+}
+.use {
+  position: absolute;
+  right: 70px;
+  bottom: 50px;
+  color: #f7614c;
+  font-size: 12px;
+
+  span {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background: url(../images/Shape.png) no-repeat;
+      height: 35px;
+      width: 20px;
+      display: block;
+      right: -33px;
+      bottom: -10px;
+    }
+    color: #fff;
+    padding-left: 2px;
+  }
+}
+.prod-use {
+  left: 25px;
+  bottom: 50px;
+  color: #fff;
 }
