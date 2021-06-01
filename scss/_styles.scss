@@ -108,6 +108,106 @@ body {
   }
 }
 
+// green start
+
+.green-info {
+  @include media(">=1180px") {
+    width: 1180px;
+    margin: auto;
+    display: flex;
+
+    padding: 175px 0 160px 0;
+  }
+}
+.green-wrapper {
+  display: flex;
+}
+.green-inner {
+  width: 260px;
+  margin-right: 40px;
+  position: relative;
+  .green-title {
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #fff;
+  }
+  p {
+    color: #fff;
+    font: 13px/25px "Montserrat", sans-serif;
+    font-weight: 400;
+    padding-top: 15px;
+  }
+  a {
+    position: absolute;
+    bottom: -37px;
+    text-decoration: none;
+    font: 13.5px/25px "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.res {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background: url(../images/res.png) no-repeat;
+    height: 50px;
+    width: 50px;
+    display: block;
+    top: -60px;
+    left: 0;
+    color: #fff;
+  }
+}
+.training {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background: url(../images/training.png) no-repeat;
+    height: 50px;
+    width: 50px;
+    display: block;
+    top: -60px;
+    left: 0;
+    color: #fff;
+  }
+}
+.connect {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background: url(../images/connect.png) no-repeat;
+    height: 50px;
+    width: 50px;
+    display: block;
+    top: -60px;
+    left: 0;
+    color: #fff;
+  }
+}
+.comm {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background: url(../images/comm.png) no-repeat;
+    height: 50px;
+    width: 50px;
+    display: block;
+    top: -60px;
+    left: 0;
+    color: #fff;
+  }
+}
+// green end
+
 .data {
   display: flex;
   background: #fff;
