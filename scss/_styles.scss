@@ -115,7 +115,6 @@ body {
     width: 1180px;
     margin: auto;
     display: flex;
-
     padding: 175px 0 160px 0;
   }
 }
@@ -314,3 +313,155 @@ body {
   bottom: 50px;
   color: #fff;
 }
+// red start
+
+.contentRed {
+  background: #fd634e;
+}
+.contentRed-wrapper {
+  width: 1180px;
+  margin: auto;
+  display: flex;
+}
+.running,
+.naked {
+  img {
+    display: block;
+  }
+}
+.red-whiteside,
+.red-whiteside-down {
+  padding: 50px 50px 20px 40px;
+  height: 310px;
+  width: 400px;
+  background: #fff;
+  span {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #fd634e;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    color: #a2ca28;
+    text-transform: uppercase;
+    padding-top: 13px;
+    position: relative;
+  }
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #656e74;
+    padding-top: 40px;
+  }
+}
+.red-whiteside {
+  position: relative;
+  &::after {
+    content: "";
+    background: url(../images/avatar.png) no-repeat;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 65px;
+    right: 35px;
+  }
+}
+.red-greenside {
+  padding: 65px 40px 40px 60px;
+  background: #a2ca28;
+  width: 100%;
+  flex: 1;
+  font-family: "Open Sans", sans-serif;
+  p {
+    font-size: 13px;
+    color: #fff;
+    line-height: 20px;
+    padding-top: 25px;
+  }
+}
+.contentRed-heand,
+.contentRed-pineapple {
+  img {
+    display: block;
+  }
+}
+.red-greenside-title {
+  font-weight: 300;
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.red-whiteside-down {
+  width: 100%;
+  height: 310px;
+  background: #fff;
+  flex: 1;
+  position: relative;
+  &::after {
+    content: "";
+    background: url(../images/strawberry.png) no-repeat;
+    position: absolute;
+    width: 35px;
+    height: 45px;
+    top: 65px;
+    right: 40px;
+  }
+}
+.red-greenside-down {
+  width: 400px;
+  background: #a2ca28;
+  position: relative;
+  &::after {
+    content: "";
+    background: url(../images/mango.png) no-repeat;
+    position: absolute;
+    width: 35px;
+    height: 40px;
+    top: 65px;
+    right: 30px;
+  }
+}
+.red-greenside-down {
+  padding: 52px 40px 40px 40px;
+  background: #a2ca28;
+  font-family: "Open Sans", sans-serif;
+  span {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    padding-bottom: 13px;
+  }
+  p {
+    font-size: 13px;
+    color: #fff;
+    line-height: 20px;
+    padding-top: 25px;
+  }
+}
+.red-greenside-down-title {
+  font-weight: 300;
+  font-size: 35px;
+  color: #fff;
+  text-transform: uppercase;
+}
+// red end
+
+// &::after {
+//   content: "";
+//   position: absolute;
+//   background: url(../images/Shape.png) no-repeat;
+//   height: 35px;
+//   width: 20px;
+//   display: block;
+//   right: -33px;
+//   bottom: -10px;
+// }
